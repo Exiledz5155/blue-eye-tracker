@@ -7,8 +7,7 @@ def main():
     eye_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_eye.xml')
 
     # Start capturing video from the webcam
-    cap = cv2.VideoCapture(0)
-
+    cap = cv2.VideoCapture(0) 
     while True:
         ret, frame = cap.read()
         if not ret:
